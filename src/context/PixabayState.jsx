@@ -6,7 +6,7 @@ const PixabayState = (props) => {
     const [imageData, setImageData] = useState([])
     const [query, setQuery] = useState('london')
 
-    const api_key = "48027566-009f3ffaaa3dcde15023d2079";
+    const api_key = import.meta.env.VITE_PIXABAY_API_KEY;
 
     useEffect(() => {
         const fetchData = async () => {
